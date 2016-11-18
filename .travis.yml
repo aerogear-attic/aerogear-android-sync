@@ -3,23 +3,24 @@
 sudo: required
 dist: precise
 
-language: android
-
 notifications:
   irc: "irc.freenode.org#aerogear"
 
+language: android
+
 jdk:
   - oraclejdk8
-  - oraclejdk7
 
 android:
   components:
-    - build-tools-23.0.3
-    - android-23
+    - platform-tools
+    - tools
+    - build-tools-24.0.3
+    - android-24
 
 env:
     matrix:
-      - ANDROID_TARGET=android-23
+      - ANDROID_TARGET=android-24
 
 before_install:
 
