@@ -39,7 +39,7 @@
 
     <properties>
         <!-- Project depencies versions -->
-        <aerogear.android.sync.version>1.0.0-alpha.2-SNAPSHOT</aerogear.android.sync.version>
+        <aerogear.android.sync.version>1.0.0-alpha.1</aerogear.android.sync.version>
 
         <!-- Plugins versions -->
         <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
