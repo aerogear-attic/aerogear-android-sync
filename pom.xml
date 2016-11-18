@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.jboss.aerogear</groupId>
         <artifactId>aerogear-parent</artifactId>
-        <version>0.2.20</version>
+        <version>0.2.21</version>
     </parent>
 
     <scm>
@@ -38,34 +38,53 @@
     </scm>
 
     <properties>
-        <java.version>1.6</java.version>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
 
-        <!-- Project depencies versions -->
-        <android.version>[5.0_r1,)</android.version>
-        <aerogear.android.sync.version>1.0.0-alpha.2-SNAPSHOT</aerogear.android.sync.version>
+        <!-- Project dependencies versions -->
+        <aerogear.bom.version>0.2.21</aerogear.bom.version>
+        <aerogear.android.sync.version>1.0.0-alpha.1</aerogear.android.sync.version>
 
         <!-- Plugins versions -->
-        <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
-        <maven.android.plugin.version>4.2.0</maven.android.plugin.version>
-        <builder.helper.plugin.version>1.10</builder.helper.plugin.version>
-        <maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
+        <maven.javadoc.plugin.version>2.10.4</maven.javadoc.plugin.version>
+        <maven.android.plugin.version>4.4.3</maven.android.plugin.version>
+        <builder.helper.plugin.version>1.12</builder.helper.plugin.version>
 
         <!-- Android configs -->
-        <android.platform>23</android.platform>
+        <android.platform>24</android.platform>
         <android.debug>false</android.debug>
         <proguard.skip>true</proguard.skip>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- AeroGear Dependencies BOM Imports -->
+            <dependency>
+                <groupId>org.jboss.aerogear</groupId>
+                <artifactId>aerogear-bom</artifactId>
+                <version>${aerogear.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- AeroGear Android Dependencies BOM Imports -->
+            <dependency>
+                <groupId>org.jboss.aerogear</groupId>
+                <artifactId>aerogear-android-bom</artifactId>
+                <version>${aerogear.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
 
+        <!-- Project dependencies -->
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
             <scope>provided</scope>
-            <version>${android.version}</version>
         </dependency>
 
         <dependency>
@@ -130,7 +149,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
