@@ -38,7 +38,9 @@
     </scm>
 
     <properties>
-        <!-- Project depencies versions -->
+
+        <!-- Project dependencies versions -->
+        <aerogear.bom.version>0.2.21</aerogear.bom.version>
         <aerogear.android.sync.version>1.0.0-alpha.1</aerogear.android.sync.version>
 
         <!-- Plugins versions -->
@@ -52,14 +54,37 @@
         <proguard.skip>true</proguard.skip>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- AeroGear Dependencies BOM Imports -->
+            <dependency>
+                <groupId>org.jboss.aerogear</groupId>
+                <artifactId>aerogear-bom</artifactId>
+                <version>${aerogear.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- AeroGear Android Dependencies BOM Imports -->
+            <dependency>
+                <groupId>org.jboss.aerogear</groupId>
+                <artifactId>aerogear-android-bom</artifactId>
+                <version>${aerogear.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
 
+        <!-- Project dependencies -->
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
             <scope>provided</scope>
-            <version>${android.version}</version>
         </dependency>
 
         <dependency>
