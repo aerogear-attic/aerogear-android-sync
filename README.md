@@ -12,7 +12,6 @@ AeroGear's Android libraries were built as jar and aar packages using [Maven](ht
 
 This module contains a client implementations that uses the aerogear-sync-server [netty-client](https://github.com/aerogear/aerogear-sync-server/tree/master/client/client-netty)
 
-
 |                 | Project Info  |
 | --------------- | ------------- |
 | License:        | Apache License, Version 2.0  |
@@ -38,7 +37,7 @@ There are two supported ways of developing apps using AeroGear for Android: Andr
 
 Add to your application's `build.gradle` file
 
-```
+```groovy
 dependencies {
   compile 'org.jboss.aerogear:aerogear-android-sync:2.1.0'
 }
@@ -49,7 +48,7 @@ dependencies {
 Include the following dependencies in your project's `pom.xml`
 
 
-```
+```xml
 <dependency>
   <groupId>org.jboss.aerogear</groupId>
   <artifactId>aerogear-android-sync</artifactId>
