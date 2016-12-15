@@ -69,12 +69,6 @@ Include the following dependencies in your project's `pom.xml`
 
 For more details about that please consult [our documentation](http://aerogear.org/docs/guides/aerogear-android).
 
-## Demo apps
-
-Take a look in our demo apps
-
-* [SyncDemo](https://github.com/aerogear/aerogear-android-cookbook/blob/master/SyncDemo)
-
 ## Development
 
 If you would like to help develop AeroGear you can join our [developer's mailing list](https://lists.jboss.org/mailman/listinfo/aerogear-dev), join #aerogear on Freenode, or shout at us on Twitter @aerogears.
