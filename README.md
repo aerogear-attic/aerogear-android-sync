@@ -10,7 +10,7 @@ AeroGear's Android libraries were built as jar and aar packages using [Maven](ht
 
 ## Sync
 
-This module contains a client implementations that uses the aerogear-sync-server [netty-client](https://github.com/aerogear/aerogear-sync-server/tree/master/client/client-netty)
+AeroGear Android Sync is a [Netty Client](https://github.com/aerogear/aerogear-sync-server/tree/master/client/client-netty) implementations of [AeroGear Sync Server](https://github.com/aerogear/aerogear-sync-server)
 
 |                 | Project Info  |
 | --------------- | ------------- |
