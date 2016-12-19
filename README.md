@@ -1,17 +1,22 @@
-# AeroGear Android Sync [![Build Status](https://travis-ci.org/aerogear/aerogear-android-sync.png)](https://travis-ci.org/aerogear/aerogear-android-sync)
+# AeroGear Android Sync
 
 AeroGear's Android libraries were built as jar and aar packages using [Maven](http://maven.apache.org/) and the [android-maven-plugin](https://github.com/jayway/maven-android-plugin). The project follows the standard Maven layout so it can be imported directly into most IDEs as a Maven project.
 
+[![Maintenance](https://img.shields.io/maintenance/yes/2016.svg)](http://github.com/aerogear/aerogear-android-sync)
+[![Travis](https://img.shields.io/travis/aerogear/aerogear-android-sync.svg)](http://travis-ci.org/aerogear/aerogear-android-sync)
+[![License](https://img.shields.io/badge/-Apache%202.0-blue.svg)](https://opensource.org/s/Apache-2.0)
+[![Maven Central](https://img.shields.io/maven-central/v/org.jboss.aerogear/aerogear-android-sync.svg)](http://search.maven.org/#search%7Cga%7C1%7Caerogear-android-sync)
+[![Javadocs](http://www.javadoc.io/badge/org.jboss.aerogear/aerogear-android-sync.svg?color=blue)](http://www.javadoc.io/doc/org.jboss.aerogear/aerogear-android-sync)
+
 ## Sync
 
-This module contains a client implementations that uses the aerogear-sync-server [netty-client](https://github.com/aerogear/aerogear-sync-server/tree/master/client/client-netty)
-
+AeroGear Android Sync is a [Netty Client](https://github.com/aerogear/aerogear-sync-server/tree/master/client/client-netty) implementations of [AeroGear Sync Server](https://github.com/aerogear/aerogear-sync-server)
 
 |                 | Project Info  |
 | --------------- | ------------- |
 | License:        | Apache License, Version 2.0  |
 | Build:          | Maven  |
-| Documentation:  | http://aerogear.org/docs/guides/aerogear-android/  |
+| Documentation:  | https://aerogear.org/android/ |
 | Issue tracker:  | https://issues.jboss.org/browse/AGDROID  |
 | Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))  |
 |                 | [aerogear-dev](http://aerogear-dev.1069024.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-dev)) 
@@ -32,7 +37,7 @@ There are two supported ways of developing apps using AeroGear for Android: Andr
 
 Add to your application's `build.gradle` file
 
-```
+```groovy
 dependencies {
   compile 'org.jboss.aerogear:aerogear-android-sync:2.1.0'
 }
@@ -43,7 +48,7 @@ dependencies {
 Include the following dependencies in your project's `pom.xml`
 
 
-```
+```xml
 <dependency>
   <groupId>org.jboss.aerogear</groupId>
   <artifactId>aerogear-android-sync</artifactId>
@@ -62,13 +67,7 @@ Include the following dependencies in your project's `pom.xml`
 
 ## Documentation
 
-For more details about that please consult [our documentation](http://aerogear.org/docs/guides/aerogear-android).
-
-## Demo apps
-
-Take a look in our demo apps
-
-* [SyncDemo](https://github.com/aerogear/aerogear-android-cookbook/blob/master/SyncDemo)
+For more details about that please consult [our documentation](http://aerogear.org/android/).
 
 ## Development
 
