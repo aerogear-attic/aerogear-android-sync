@@ -20,6 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/ASL-2.0.txt'
+        exclude 'META-INF/LGPL-3.0.txt'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'APK META-INF/io.netty.versions.properties'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
 }
 
 dependencies {
