@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 26
 
         versionCode Integer.parseInt(project.property("VERSION_CODE"))
         versionName project.property("VERSION_NAME")
@@ -32,9 +32,9 @@ android {
 }
 
 dependencies {
-    compile 'org.jboss.aerogear:sync-json-patch-core:1.0.0-alpha.1'
-    compile 'org.jboss.aerogear:sync-json-patch-client:1.0.0-alpha.1'
-    compile 'org.jboss.aerogear:sync-client-netty:1.0.0-alpha.1'
+    implementation 'org.jboss.aerogear:sync-json-patch-core:1.0.0-alpha.1'
+    implementation 'org.jboss.aerogear:sync-json-patch-client:1.0.0-alpha.1'
+    implementation 'org.jboss.aerogear:sync-client-netty:1.0.0-alpha.1'
 }
 
 apply from: '../gradle-mvn-push.gradle'
